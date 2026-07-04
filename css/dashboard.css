@@ -1,0 +1,386 @@
+/* =====================================================
+   NUTRIBITE DASHBOARD
+   PART 1
+   RESET + NAVBAR + HEADER
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FBF8;
+
+    color:#333;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    display:block;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/* =====================================================
+                        NAVBAR
+===================================================== */
+
+header{
+
+    background:#fff;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.navbar{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    width:170px;
+
+}
+
+.back-btn{
+
+    background:#4CAF50;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#2E7D32;
+
+    transform:translateY(-3px);
+
+}
+
+.back-btn i{
+
+    margin-right:8px;
+
+}
+
+
+/* =====================================================
+                    WELCOME
+===================================================== */
+
+.dashboard{
+
+    padding:70px 0;
+
+}
+
+.welcome{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.welcome h1{
+
+    font-size:46px;
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.welcome p{
+
+    color:#666;
+
+    font-size:18px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+                  FEATURE GRID
+===================================================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+    align-items:stretch;
+
+}
+
+/* =====================================================
+   NUTRIBITE DASHBOARD
+   PART 2
+   FEATURE CARD + RESPONSIVE
+===================================================== */
+
+
+/* ===============================
+        FEATURE CARD
+================================ */
+
+.card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px 20px;
+
+    text-align:center;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.card i{
+
+    width:70px;
+
+    height:70px;
+
+    line-height:70px;
+
+    border-radius:50%;
+
+    background:#E8F5E9;
+
+    color:#4CAF50;
+
+    font-size:28px;
+
+    margin:0 auto 20px;
+
+}
+
+.card:hover i{
+
+    background:#4CAF50;
+
+    color:white;
+
+    transform:scale(1.08);
+
+}
+
+.card h3{
+
+    font-size:19px;
+
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    flex:1;
+
+}
+
+.card a{
+
+    display:block;
+
+    width:100%;
+
+    padding:14px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-top:auto;
+
+    transition:.3s;
+
+}
+
+.card a:hover{
+
+    background:#2E7D32;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ===============================
+        RESPONSIVE
+================================ */
+
+@media(max-width:992px){
+
+    .welcome h1{
+
+        font-size:38px;
+
+    }
+
+    .feature-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+
+        height:auto;
+
+        padding:20px 0;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .logo{
+
+        width:150px;
+
+    }
+
+    .welcome{
+
+        margin-bottom:40px;
+
+    }
+
+    .welcome h1{
+
+        font-size:32px;
+
+    }
+
+    .welcome p{
+
+        font-size:16px;
+
+    }
+
+    .feature-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card{
+
+        padding:30px 25px;
+
+    }
+
+}
+
+
+/* ===============================
+        ANIMATION
+================================ */
+
+.card,
+.card i,
+.card a{
+
+    transition:all .35s ease;
+
+}
+
+::selection{
+
+    background:#4CAF50;
+
+    color:white;
+
+}

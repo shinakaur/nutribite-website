@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pengatur Kalori | NutriBite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/feature.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container navbar">
+
+        <img src="../assets/logoo.png" class="logo">
+
+        <a href="../dashboard.html" class="back-btn">
+
+            ← Dashboard
+
+        </a>
+
+    </div>
+
+</header>
+
+<section class="feature">
+
+<div class="container">
+
+<h1>Pengatur Kalori</h1>
+
+<p class="subtitle">
+
+Upload foto makanan atau masukkan nama makanan untuk melihat estimasi kandungan kalorinya.
+
+</p>
+
+<!-- ================= FORM ================= -->
+
+<div class="card">
+
+<h2>Analisis Makanan</h2>
+
+<label>Upload Foto Makanan</label>
+
+<input
+type="file"
+id="foodImage"
+accept="image/*">
+
+<div id="previewBox">
+
+<img
+id="previewImage"
+src="">
+
+</div>
+
+<label>atau Nama Makanan</label>
+
+<input
+type="text"
+id="foodName"
+placeholder="Contoh : Nasi Goreng">
+
+<button id="analyzeBtn">
+
+Hitung Kalori
+
+</button>
+
+</div>
+
+<!-- ================= RESULT ================= -->
+
+<div id="resultSection" class="result-section">
+
+<h2>Hasil Analisis</h2>
+
+<div id="resultContainer">
+
+</div>
+
+</div>
+
+<!-- ================= EMAIL ================= -->
+
+<div id="emailSection" class="email-section">
+
+<h2>Simpan Hasil</h2>
+
+<p>
+
+Masukkan email untuk menyimpan hasil analisis kalori.
+
+</p>
+
+<input
+type="email"
+placeholder="Masukkan Email">
+
+<button>
+
+Simpan Hasil
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/calorie.js"></script>
+
+</body>
+
+</html>

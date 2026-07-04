@@ -1,0 +1,1315 @@
+/* =========================================
+   RESET
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FBF8;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+header{
+
+    background:#fff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.navbar{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    width:170px;
+
+}
+
+.back-btn{
+
+    background:#4CAF50;
+
+    color:white;
+
+    padding:13px 28px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#2E7D32;
+
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.feature{
+
+    padding:60px 0 100px;
+
+}
+
+.feature h1{
+
+    font-size:46px;
+
+    color:#2E7D32;
+
+    margin-bottom:12px;
+
+}
+
+.subtitle{
+
+    color:#666;
+
+    font-size:18px;
+
+    margin-bottom:45px;
+
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    margin-bottom:50px;
+
+}
+
+.card h2{
+
+    margin-bottom:25px;
+
+    color:#2E7D32;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:22px;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+select,
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+select:focus,
+input:focus{
+
+    border-color:#4CAF50;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+button{
+
+    width:100%;
+
+    margin-top:35px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#2E7D32;
+
+}
+
+
+/* =========================================
+   RESULT
+========================================= */
+
+.result-section{
+
+    display:none;
+
+    margin-top:60px;
+
+}
+
+.result-section h2{
+
+    color:#2E7D32;
+
+    margin-bottom:35px;
+
+}
+
+
+/* =========================================
+   FOOD CARD
+========================================= */
+
+.meal{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.meal img{
+
+    width:170px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+}
+
+.meal h3{
+
+    color:#2E7D32;
+
+    margin-bottom:8px;
+
+}
+
+.meal p{
+
+    margin-bottom:8px;
+
+    color:#666;
+
+}
+
+.meal span{
+
+    color:#4CAF50;
+
+    font-weight:600;
+
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.total-card{
+
+    margin-top:40px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.total-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.total-card p{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.email-section{
+
+    display:none;
+
+    margin-top:60px;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.email-section h2{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.email-section p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+    height:auto;
+
+    flex-direction:column;
+
+    padding:20px 0;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    width:150px;
+
+}
+
+.feature h1{
+
+    font-size:34px;
+
+}
+
+.card{
+
+    padding:25px;
+
+}
+
+.meal{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.meal img{
+
+    width:100%;
+
+    height:220px;
+
+}
+
+}
+
+/* =========================================
+   CALORIE FEATURE
+========================================= */
+
+#previewBox{
+
+    margin-top:20px;
+
+    display:none;
+
+}
+
+#previewImage{
+
+    width:100%;
+
+    max-height:350px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    border:1px solid #ddd;
+
+}
+
+.result-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.result-card img{
+
+    width:220px;
+
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+}
+
+.result-info{
+
+    flex:1;
+
+}
+
+.result-info h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+.nutrition-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.nutrition-item{
+
+    background:#F5FAF5;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.nutrition-item h4{
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+
+}
+
+.nutrition-item p{
+
+    color:#4CAF50;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.tips{
+
+    margin-top:30px;
+
+    background:#E8F5E9;
+
+    border-left:6px solid #4CAF50;
+
+    border-radius:15px;
+
+    padding:25px;
+
+}
+
+.tips h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.tips ul{
+
+    padding-left:20px;
+
+}
+
+.tips li{
+
+    margin-bottom:10px;
+
+    color:#555;
+
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.result-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.result-card img{
+
+    width:100%;
+
+    height:230px;
+
+}
+
+.nutrition-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ==========================================
+   HEALTH MONITOR
+========================================== */
+
+.health-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+}
+
+.health-title{
+
+    color:#2E7D32;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+
+}
+
+.health-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.health-item{
+
+    background:#F5FAF5;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.health-item h4{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+    font-weight:500;
+
+}
+
+.health-item p{
+
+    color:#2E7D32;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.health-item span{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.recommendation{
+
+    margin-top:35px;
+
+    background:#E8F5E9;
+
+    border-left:6px solid #4CAF50;
+
+    border-radius:18px;
+
+    padding:30px;
+
+}
+
+.recommendation h3{
+
+    color:#2E7D32;
+
+    margin-bottom:18px;
+
+}
+
+.recommendation ul{
+
+    padding-left:20px;
+
+}
+
+.recommendation li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+@media(max-width:768px){
+
+.health-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.health-item{
+
+    padding:20px;
+
+}
+
+.health-item p{
+
+    font-size:24px;
+
+}
+
+}
+
+.health-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+}
+
+.health-title{
+
+    color:#2E7D32;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+
+}
+
+.health-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.health-item{
+
+    background:#F5FAF5;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.health-item h4{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+    font-weight:500;
+
+}
+
+.health-item p{
+
+    color:#2E7D32;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.health-item span{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.recommendation{
+
+    margin-top:35px;
+
+    background:#E8F5E9;
+
+    border-left:6px solid #4CAF50;
+
+    border-radius:18px;
+
+    padding:30px;
+
+}
+
+.recommendation h3{
+
+    color:#2E7D32;
+
+    margin-bottom:18px;
+
+}
+
+.recommendation ul{
+
+    padding-left:20px;
+
+}
+
+.recommendation li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.health-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.health-item{
+
+    padding:20px;
+
+}
+
+.health-item p{
+
+    font-size:24px;
+
+}
+
+}
+
+/* ==========================================
+   MANAJEMEN BERAT BADAN
+========================================== */
+
+.weight-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+}
+
+.weight-title{
+
+    color:#2E7D32;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.weight-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.weight-item{
+
+    background:#F5FAF5;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.weight-item h4{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+    font-weight:500;
+
+}
+
+.weight-item p{
+
+    color:#2E7D32;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.weight-item span{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+/* Progress */
+
+.progress-box{
+
+    margin-top:35px;
+
+}
+
+.progress-box h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:18px;
+
+    background:#E0E0E0;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:70%;
+
+    height:100%;
+
+    background:#4CAF50;
+
+    border-radius:30px;
+
+}
+
+.progress-text{
+
+    margin-top:10px;
+
+    text-align:right;
+
+    color:#666;
+
+    font-weight:600;
+
+}
+
+
+/* Rekomendasi */
+
+.weight-tips{
+
+    margin-top:35px;
+
+    background:#E8F5E9;
+
+    border-left:6px solid #4CAF50;
+
+    border-radius:18px;
+
+    padding:30px;
+
+}
+
+.weight-tips h3{
+
+    color:#2E7D32;
+
+    margin-bottom:18px;
+
+}
+
+.weight-tips ul{
+
+    padding-left:20px;
+
+}
+
+.weight-tips li{
+
+    color:#555;
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.weight-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.weight-item{
+
+    padding:20px;
+
+}
+
+.weight-item p{
+
+    font-size:24px;
+
+}
+
+}
+
+/* ==========================================
+   PELACAK NUTRISI
+========================================== */
+
+.nutrition-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+}
+
+.nutrition-title{
+
+    color:#2E7D32;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.nutrition-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.nutrition-item{
+
+    background:#F5FAF5;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.nutrition-item h4{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+    font-weight:500;
+
+}
+
+.nutrition-item p{
+
+    color:#2E7D32;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.nutrition-item span{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+/* Progress Nutrisi */
+
+.nutrition-progress{
+
+    margin-top:35px;
+
+}
+
+.progress-row{
+
+    margin-bottom:25px;
+
+}
+
+.progress-row h4{
+
+    margin-bottom:10px;
+
+    color:#444;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:16px;
+
+    background:#E0E0E0;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    background:#4CAF50;
+
+    border-radius:30px;
+
+}
+
+.progress-value{
+
+    text-align:right;
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* Tips */
+
+.nutrition-tips{
+
+    margin-top:35px;
+
+    background:#E8F5E9;
+
+    border-left:6px solid #4CAF50;
+
+    border-radius:18px;
+
+    padding:30px;
+
+}
+
+.nutrition-tips h3{
+
+    color:#2E7D32;
+
+    margin-bottom:18px;
+
+}
+
+.nutrition-tips ul{
+
+    padding-left:20px;
+
+}
+
+.nutrition-tips li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.nutrition-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.nutrition-item{
+
+    padding:20px;
+
+}
+
+.nutrition-item p{
+
+    font-size:24px;
+
+}
+
+}

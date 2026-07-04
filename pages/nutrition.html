@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pelacak Nutrisi | NutriBite</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/feature.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<img src="../assets/logoo.png" class="logo">
+
+<a href="../dashboard.html" class="back-btn">
+
+← Dashboard
+
+</a>
+
+</div>
+
+</header>
+
+<section class="feature">
+
+<div class="container">
+
+<h1>Pelacak Nutrisi</h1>
+
+<p class="subtitle">
+
+Catat makanan yang Anda konsumsi untuk melihat ringkasan nutrisi harian.
+
+</p>
+
+<div class="card">
+
+<h2>Catatan Makanan Hari Ini</h2>
+
+<label>Sarapan</label>
+
+<input type="text" placeholder="Contoh: Oatmeal dan Pisang">
+
+<label>Makan Siang</label>
+
+<input type="text" placeholder="Contoh: Ayam Panggang dan Nasi Merah">
+
+<label>Camilan</label>
+
+<input type="text" placeholder="Contoh: Apel">
+
+<label>Makan Malam</label>
+
+<input type="text" placeholder="Contoh: Salad Sayur">
+
+<button id="nutritionBtn">
+
+Lihat Ringkasan Nutrisi
+
+</button>
+
+</div>
+
+<div id="resultSection" class="result-section">
+
+<h2>Ringkasan Nutrisi Harian</h2>
+
+<div id="nutritionResult"></div>
+
+</div>
+
+<div id="emailSection" class="email-section">
+
+<h2>Simpan Hasil</h2>
+
+<p>
+
+Masukkan email Anda untuk menyimpan ringkasan nutrisi.
+
+</p>
+
+<input type="email" placeholder="Masukkan Email">
+
+<button id="saveNutrition">
+
+Simpan Hasil
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/nutrition.js"></script>
+
+</body>
+
+</html>

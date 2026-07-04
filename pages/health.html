@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pemantau Kesehatan | NutriBite</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/feature.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<img src="../assets/logoo.png" class="logo">
+
+<a href="../dashboard.html" class="back-btn">
+
+← Dashboard
+
+</a>
+
+</div>
+
+</header>
+
+<section class="feature">
+
+<div class="container">
+
+<h1>Pemantau Kesehatan</h1>
+
+<p class="subtitle">
+
+Periksa kondisi kesehatan dasar Anda dan dapatkan rekomendasi gaya hidup sehat.
+
+</p>
+
+<div class="card">
+
+<h2>Informasi Kesehatan</h2>
+
+<label>Usia</label>
+
+<input type="number" placeholder="Contoh: 21">
+
+<label>Tinggi Badan (cm)</label>
+
+<input type="number" placeholder="Contoh: 170">
+
+<label>Berat Badan (kg)</label>
+
+<input type="number" placeholder="Contoh: 65">
+
+<label>Tekanan Darah</label>
+
+<input type="text" placeholder="Contoh: 120/80">
+
+<button id="healthBtn">
+
+Periksa Kesehatan
+
+</button>
+
+</div>
+
+<div id="resultSection" class="result-section">
+
+<h2>Ringkasan Kesehatan</h2>
+
+<div id="healthResult"></div>
+
+</div>
+
+<div id="emailSection" class="email-section">
+
+<h2>Simpan Hasil</h2>
+
+<p>
+
+Masukkan email Anda untuk menyimpan hasil pemeriksaan kesehatan.
+
+</p>
+
+<input type="email" placeholder="Masukkan Email">
+
+<button id="saveHealth">
+
+Simpan Hasil
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/health.js"></script>
+
+</body>
+
+</html>

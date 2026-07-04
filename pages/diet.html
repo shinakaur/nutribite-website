@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Diet Sehat Praktis | NutriBite</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/feature.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<img src="../assets/logoo.png" class="logo">
+
+<a href="../dashboard.html" class="back-btn">
+
+← Dashboard
+
+</a>
+
+</div>
+
+</header>
+
+<section class="feature">
+
+<div class="container">
+
+<h1>Diet Sehat Praktis</h1>
+
+<p class="subtitle">
+
+Atur tujuan dietmu dan dapatkan rekomendasi menu harian.
+
+</p>
+
+<!-- FORM -->
+
+<div class="card">
+
+<h2>Informasi Diet</h2>
+
+<label>Tujuan Diet</label>
+
+<select id="goal">
+
+<option>Turun Berat Badan</option>
+
+<option>Menjaga Berat Badan</option>
+
+<option>Menambah Berat Badan</option>
+
+</select>
+
+<label>Tingkat Aktivitas</label>
+
+<select>
+
+<option>Ringan</option>
+
+<option>Sedang</option>
+
+<option>Berat</option>
+
+</select>
+
+<label>Preferensi Makanan</label>
+
+<select>
+
+<option>Tidak Ada</option>
+
+<option>Vegetarian</option>
+
+<option>Rendah Gula</option>
+
+<option>Rendah Lemak</option>
+
+</select>
+
+<button id="generateBtn">
+
+Buat Menu Diet
+
+</button>
+
+</div>
+
+<!-- RESULT -->
+
+<div id="resultSection" class="result-section">
+
+<h2>Rekomendasi Menu Hari Ini</h2>
+
+<div id="mealContainer">
+
+</div>
+
+<div class="total-card">
+
+<h3>Total Kalori</h3>
+
+<p>± 1.440 kcal</p>
+
+</div>
+
+</div>
+
+<!-- EMAIL -->
+
+<div id="emailSection" class="email-section">
+
+<h2>Simpan Hasil</h2>
+
+<p>
+
+Masukkan email untuk menyimpan hasil diet.
+
+</p>
+
+<input
+
+type="email"
+
+placeholder="Masukkan email">
+
+<button>
+
+Simpan Hasil
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/diet.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manajemen Berat Badan | NutriBite</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/feature.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<img src="../assets/logoo.png" class="logo">
+
+<a href="../dashboard.html" class="back-btn">
+
+← Dashboard
+
+</a>
+
+</div>
+
+</header>
+
+<section class="feature">
+
+<div class="container">
+
+<h1>Manajemen Berat Badan</h1>
+
+<p class="subtitle">
+
+Buat rencana sederhana untuk mencapai target berat badan ideal Anda.
+
+</p>
+
+<div class="card">
+
+<h2>Target Berat Badan</h2>
+
+<label>Berat Badan Saat Ini (kg)</label>
+
+<input type="number" placeholder="Contoh: 72">
+
+<label>Target Berat Badan (kg)</label>
+
+<input type="number" placeholder="Contoh: 65">
+
+<label>Target Waktu</label>
+
+<select>
+
+<option>1 Bulan</option>
+
+<option>2 Bulan</option>
+
+<option>3 Bulan</option>
+
+<option>6 Bulan</option>
+
+</select>
+
+<button id="weightBtn">
+
+Hitung Rencana
+
+</button>
+
+</div>
+
+<div id="resultSection" class="result-section">
+
+<h2>Rencana Berat Badan</h2>
+
+<div id="weightResult"></div>
+
+</div>
+
+<div id="emailSection" class="email-section">
+
+<h2>Simpan Rencana</h2>
+
+<p>
+
+Masukkan email Anda untuk menyimpan rencana berat badan.
+
+</p>
+
+<input type="email" placeholder="Masukkan Email">
+
+<button id="saveWeight">
+
+Simpan Hasil
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/weight.js"></script>
+
+</body>
+
+</html>
